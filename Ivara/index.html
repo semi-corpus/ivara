@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Title -->
+    <title>IVARA</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body class="animated fadeIn">
+    <span id="gtt"></span>
+    <!-- MAIN BAR -->
+    <nav class="main-nav" id="main-nav">
+        <div class="aka animated fadeIn">
+            <a class="logo" href="#gtt">
+                <img src="img/icons/ivara-logo.png">
+                <span>IVARA</span>
+            </a>
+        </div>
+        <div class="main-links" id="main-links">
+            <a class="">GAMES</a>
+            <a class="">FORUM</a>
+            <a class="animated fadeIn" href="login.html">
+                <button class="cta">
+                    <span class="animated fadeIn delay-03s">LOGIN</span>
+                </button>
+            </a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:35px;" class="burger" onclick="mobileNav();">&#9776;</a>
+    </nav>
+    <!-- HEADER -->     
+    <header class="animated fadeIn">
+        <div class="animated fadeIn" id="overlay">
+            <div id="perspective">
+                <h2><span>&nbsp;IVARA&nbsp;</span></h2>
+                <h3>Enter a new world.</h3>
+                <p>Duplexque isdem diebus acciderat malum, quod et Theophilum insontem atrox interceperat casus.</p>
+            </div>
+            <button class="cta">EXPLORE</button>
+        </div>
+    </header>
+    <!-- SECOND NAV -->  
+    <nav class="sub-nav" id="sub-nav">
+        <ul>
+            <li><a>News</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Lorem</a></li>
+            <li><a>Support</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- MOBILE-NAV -->  
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a>GAMES</a></li>
+            <li><a>FORUM</a></li>
+            <li>
+                <a class="animated fadeIn" href="login.html">
+                    <button class="cta">
+                        <span class="animated fadeIn delay-03s">LOGIN</span>
+                    </button>
+                </a>
+            </li>
+            <li><a>NEWS</a></li>
+            <li><a>REVIEWS</a></li>
+            <li><a>LOREM</a></li>
+            <li><a>SUPPORT</a></li>
+            <li><a>CONTACT</a></li>
+        </ul> 
+    </nav>
+    <main class="container" id="container">
+        <!-- PRODUCTS -->     
+        <section class="products" id="products">
+            <h2 class="section-name">OUR PRODUCTS</h2>
+            <p class="section-description">Latest In :</p>
+            <div class="table">
+                <div class="table-cell animated flipInX">
+                    <h5>Mass Effect 2</h5>
+                    <ul>
+                        <li><img src="img/games/me-2.jpg"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">Racing</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-cell animated flipInX">
+                    <h5>Mass Effect 3</h5> 
+                    <ul>
+                        <li><img src="img/games/me-3.jpg"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">FPS</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-cell animated flipInX">
+                    <h5>Mass Effect Andromeda</h5>
+                    <ul>
+                        <li><img src="img/games/me-a.png"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">MMORPG</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-cell animated flipInX">
+                        <h5>Splinter Cell : Chaos Theory</h5>
+                    <ul>
+                        <li><img src="img/games/sc-ct.png"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">Infiltration</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-cell animated flipInX">
+                        <h5>Splinter Cell : Blacklist</h5>
+                    <ul>
+                        <li><img src="img/games/sc-blacklist.jpg"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">Racing</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-cell animated flipInX">
+                    <h5>Need For Speed Underground 2</h5>
+                    <ul>
+                        <li><img src="img/games/nfsu2.jpg"></li>
+                        <li class="hidden-description">
+                            <p>Lorem Ipsum for ever and ever and ever and ever... Lorem Ipsum for ever and ever and ever and ever...</p>
+                            <span class="typeofgame">Racing</span>
+                            <span class="evaluation">
+                                5<img src="img/icons/icon-star.png">
+                            </span>
+                            <button class="cta buy-product">BUY</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" target="_blank">
+                    <button class="cta">
+                        See All Products
+                    </button>
+                </a>
+            </div>
+        </section>
+        <!-- NEWS --> 
+        <section class="news" id="news">
+            <h2 class="section-name">NEWS</h2>
+            <p class="section-description">Latest News :</p>
+            <div class="table article-table">
+                <div class="table-cell article-cell">
+                    <h5>Warframe</h5>
+                    <img src="img/games/warframe.png">
+                    <h6 class="article-date">16/03/2019</h6>
+                    <p>Quis enim aut eum diligat quem metuat, aut eum a quo se metui putet? Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque, ceciderunt, tum intellegitur quam fuerint inopes amicorum. Quod Tarquinium dixisse ferunt, tum exsulantem se intellexisse quos fidos amicos habuisset, quos infidos, cum iam neutris gratiam referre posset.</p>
+                    <h6 class="article-author">Author : Semi Corpus</h6>
+                </div>
+            </div>
+            <div class="table article-table">
+                <div class="table-cell article-cell">
+                    <h5>Tomb Raider : Rise of the Tomb Raider - 20th Anniversary</h5>
+                    <img src="img/games/tr-rise.jpg">    
+                    <h6 class="article-date">16/03/2019</h6>
+                    <p>Quis enim aut eum diligat quem metuat, aut eum a quo se metui putet? Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque, ceciderunt, tum intellegitur quam fuerint inopes amicorum. Quod Tarquinium dixisse ferunt, tum exsulantem se intellexisse quos fidos amicos habuisset, quos infidos, cum iam neutris gratiam referre posset.</p>
+                    <h6 class="article-author">Author : Semi Corpus</h6>
+                </div>
+            </div>
+            <div class="table article-table">
+                <div class="table-cell article-cell">
+                    <h5>Rocket League</h5>
+                    <img src="img/games/rl.jpg">
+                    <h6 class="article-date">16/03/2019</h6>
+                    <p>Quis enim aut eum diligat quem metuat, aut eum a quo se metui putet? Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque, ceciderunt, tum intellegitur quam fuerint inopes amicorum. Quod Tarquinium dixisse ferunt, tum exsulantem se intellexisse quos fidos amicos habuisset, quos infidos, cum iam neutris gratiam referre posset.</p>
+                    <h6 class="article-author">Author : Semi Corpus</h6>
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" target="_blank">
+                    <button class="cta">
+                        See Older News
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-home"><p>All Rights Reserved - SEMICORPUS</p></footer>
+    <script type="text/javascript">
+        // Main Nav Transparency Swicth (jQuery)
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".main-nav");
+                $nav.toggleClass('has-scrolled', $(this).scrollTop() > $nav.height());
+
+            });
+        }); 
+        // 2D Header
+        // Thanks to Pavel Dobryakov
+        const ANGLE = 30;
+
+        let card = document.querySelectorAll("#overlay");
+
+        card.forEach((element, i) => {
+            floatable(element);
+        });
+
+        function floatable (panel) {
+            let content = panel.querySelector("#perspective");
+            panel.addEventListener('mouseout', e => {
+                content.style.transform = `perspective(800px)
+                                           rotateX(0deg)
+                                           rotateY(0deg)
+                                           rotateZ(0deg)`;
+            });
+
+            panel.addEventListener('mousemove', e => {
+                let w = panel.clientWidth;
+                let h = panel.clientHeight;
+                let y = (e.offsetX - w * 0.25) / w * ANGLE;
+                let x = (1 - (e.offsetY - h * 0.5)) / h * ANGLE;
+
+                content.style.transform = `perspective(800px)
+                                           rotateX(${x}deg)
+                                           rotateY(${y}deg)`;
+                content.style.transition = `all .5s ease`;
+            });
+        }
+
+        // Responsive Navbar (max-width: 768px)
+        function mobileNav() {
+            var element = document.getElementById('mobile-nav');
+            element.classList.toggle('block'); 
+        }
+    </script>
+</body>
+</html>

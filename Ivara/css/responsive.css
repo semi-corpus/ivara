@@ -1,0 +1,85 @@
+/* > 1500 */ 
+@media only screen and (min-width: 1500px) {
+  header #overlay{padding-top:30vh}
+}
+/* < 1500 */ 
+@media only screen and (max-width: 1500px) {
+  header h2{font-size:60px;padding:10vh 20px 80px 20px;}
+  header h3{font-size:60px;padding:20px 100px;}
+  .login h2{font-size:60px;padding-top:40px;}
+}
+
+/* < 768 */ 
+@media only screen and (max-width: 768px) {
+  .main-nav{background: #03191f;height:60px;}
+  .main-nav a{display:none;}
+  .main-nav .logo{display:block;}
+  .main-nav .logo img{position:fixed;top:14px;left:4%;width:40px;margin-right:0;}
+  .main-nav .logo span{display:none;}
+  .main-nav .burger{display:block;line-height:60px;position:fixed;top:-5px;right:4%;}
+  /**/
+  .mobile-nav{background:#031f29;min-height:100%;position:fixed;top:60px;left:0;right:0;text-align:center;z-index:5}
+  .mobile-nav ul{overflow-y: scroll;}
+  .mobile-nav li{font-size:20px;border-top:1px solid #042530;;border-bottom:1px solid#042530;;padding:20px;}
+  .mobile-nav li .cta{font-size:16px}
+  /**/
+  header{min-height:320px;}
+  header #overlay{min-height:320px;}
+  header h2{font-size:40px;padding:10px;}
+  header h3{font-size:24px;padding:10px;}
+  header p{font-size:19px;max-width:500px;padding:10px;}
+  header .cta{margin:15px}
+  /**/
+  nav.sub-nav{display:none;}
+  /**/
+  .section-name{font-size:40px;padding:20px 0;text-align: center;}
+  .section-description{font-size:18px;padding:20px 0;text-align: center;width:100%;}
+  /**/
+  .products .table .table-cell{width:270px;}.products .table .table-cell .hidden-description p{font-size:16px;}
+  .hidden-description .buy-product{bottom:60px;}
+  .products .re-center{margin-left:-15px;}
+  .products .section-description span{margin-left:-15px;}
+  .products .section-description br{display:block;}
+  /**/
+  .news th{font-size:12px;}
+  .news th img{width:40px;}
+  /**/
+  .login #login-overlay{padding-top:120px;}
+  .login form input{height:50px;}
+  .login form input, form textarea{margin:20px auto;width:80%;}
+}
+
+/* < 540 */ 
+@media only screen and (max-width: 540px) {
+  .article-cell img{display:block;float:none;margin:0px auto;width:100%}
+}
+
+/* < 320 */ 
+@media only screen and (max-width: 320px) {
+  .main-nav .logo img{position:fixed;top:17px;left:17px;width:35px;}
+  .main-nav .burger{display:block;line-height:60px;position:fixed;top:-5px;right:15px;}
+  .mobile-nav li{font-size:16px;padding:10px;}
+  /**/
+  header h2, .login h2{font-size:40px;padding:10px;}
+  header h3{font-size:18px;padding:10px;word-spacing: 4px;}
+  header p{font-size:15px;max-width:300px;padding:10px;}
+  header .cta{font-size:14px;margin:5px;padding:8px 10px}
+  /**/
+  .section-name{font-size:32px;padding:10px;}
+  .section-description{padding:10px;}
+  /**/
+  .table-cell{margin:0;}
+  .products .table .table-cell:hover{box-shadow:none;}
+  .hidden-description{display:none!important;}
+  /**/
+  .article-cell{width:94%;}
+  .article-cell p{font-size:15px}
+  /**/
+  .login #login-overlay{padding-top: 100px;}
+  .login form input, form textarea{margin:20px auto;width:200px;}
+}
+
+/* < 279 */ 
+@media only screen and (max-width: 279px) {
+  .products .table .table-cell{width:220px}
+}

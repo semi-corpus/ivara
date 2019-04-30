@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Title -->
+    <title>IVARA</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body class="animated fadeIn">
+    <span id="gtt"></span>
+    <!-- MAIN BAR -->
+    <nav class="main-nav has-scrolled" id="main-nav">
+        <div class="aka animated fadeIn">
+            <a class="logo" href="index.html">
+                <img src="img/icons/ivara-logo.png">
+                <span>IVARA</span>
+            </a>
+        </div>
+        <div class="main-links" id="main-links">
+            <a class="">GAMES</a>
+            <a class="">FORUM</a>
+            <a class="animated fadeIn" href="#login">
+                <button class="cta">
+                    <span class="animated fadeIn delay-03s">LOGIN</span>
+                </button>
+            </a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:35px;" class="burger" onclick="mobileNav();">&#9776;</a>
+    </nav>
+    <!-- SECOND NAV -->  
+    <nav class="sub-nav" id="sub-nav">
+        <ul>
+            <li><a>News</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Lorem</a></li>
+            <li><a>F.A.Q.</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- MOBILE-NAV -->  
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a>GAMES</a></li>
+            <li><a>FORUM</a></li>
+            <li>
+                <a class="animated fadeIn" href="#login">
+                    <button class="cta">
+                        <span class="animated fadeIn delay-03s">LOGIN</span>
+                    </button>
+                </a>
+            </li>
+
+            <li><a>News</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Lorem</a></li>
+            <li><a>Support</a></li>
+            <li><a>login</a></li>
+        </ul> 
+    </nav>
+    <main class="container" id="container">
+        <!-- LOGIN --> 
+        <section class="login" id="login">
+            <div id="login-overlay">
+                <h2><span>&nbsp;LOGIN&nbsp;</span></h2>
+                <form name="loginform" method="post" action="#alert">
+                    <label for="user"><input type="text" name="user" placeholder="Username or mail adress" id="" required=""></label>
+                    <label for="password"><input type="password" placeholder="Password" required=""></textarea></label>
+                    <input type="submit" value="Submit">
+                </form>
+                <div id="alert" style="text-align:center;margin:auto;width:300px;">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        // 2D Header
+        // Thanks to Pavel Dobryakov
+        const ANGLE = 10;
+
+        let card = document.querySelectorAll("#overlay");
+
+        card.forEach((element, i) => {
+            floatable(element);
+        });
+
+        function floatable (panel) {
+            let content = panel.querySelector("#perspective");
+            panel.addEventListener('mouseout', e => {
+                content.style.transform = `perspective(500px)
+                                           rotateX(0deg)
+                                           rotateY(0deg)
+                                           rotateZ(0deg)`;
+            });
+
+            panel.addEventListener('mousemove', e => {
+                let w = panel.clientWidth;
+                let h = panel.clientHeight;
+                let y = (e.offsetX - w * 0.25) / w * ANGLE;
+                let x = (1 - (e.offsetY - h * 0.5)) / h * ANGLE;
+
+                content.style.transform = `perspective(500px)
+                                           rotateX(${x}deg)
+                                           rotateY(${y}deg)`;
+                content.style.transition = `all .5s ease`;
+            });
+        }
+
+        // Responsive Navbar (max-width: 768px)
+        function mobileNav() {
+            var element = document.getElementById('mobile-nav');
+            element.classList.toggle('block'); 
+        }
+    </script>
+</body>
+</html>
